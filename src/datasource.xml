@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources
+		xmlns="http://gdk.com/db"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://gdk.com/db/gdk-db-2.0.xsd">
+	
+	<constants>
+		<constant name="connection-provider" value="com.avatar.db.connection.c3p0.C3P0ConnectionProvider"/>
+		<constant name="max-connection-size" value="100"/>
+		<constant name="min-connection-size" value="5"/>
+		<constant name="init-connection-size" value="5"/>
+		<constant name="acquire-increment-size" value="10"/>
+		<constant name="available-connection-size" value="2"/>
+		<constant name="load-on-startup" value="true"/>
+		<constant name="show-sql" value="false"/>
+	</constants>
+   	
+   	<datasource>
+		<name>default</name>
+    	<driver-class>com.mysql.jdbc.Driver</driver-class>
+    	<driver-url>jdbc:mysql://localhost:3306/wooyun</driver-url>
+    	<user>root</user>
+    	<password>123456</password>
+   	</datasource>
+	
+</datasources>
